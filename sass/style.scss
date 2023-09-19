@@ -61,6 +61,7 @@ main {
   width: 50%;
   object-fit: cover;
   border-radius: 10px 0 0 10px;
+  padding-bottom: -10px;
 
   @media (max-width: 375px) {
     width: 100%;
@@ -68,11 +69,17 @@ main {
   }
 }
 .left {
-  //   width: 50%;
+  width: 50%;
   background-color: $neutral-white;
   height: 100%;
   padding-inline: 40px;
   border-radius: 0 10px 10px 0;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+  }
 }
 
 h1 {
